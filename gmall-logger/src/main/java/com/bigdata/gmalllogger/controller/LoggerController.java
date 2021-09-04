@@ -1,4 +1,4 @@
-package com.atguigu.gmalllogger.controller;
+package com.bigdata.gmalllogger.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

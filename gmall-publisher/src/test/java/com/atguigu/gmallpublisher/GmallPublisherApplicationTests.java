@@ -1,4 +1,4 @@
-package com.atguigu.gmallpublisher;
+package com.bigdata.gmallpublisher;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

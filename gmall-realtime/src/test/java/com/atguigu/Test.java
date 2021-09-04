@@ -1,8 +1,8 @@
-package com.atguigu;
+package com.bigdata;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.atguigu.utils.MyKafkaUtil;
+import com.bigdata.utils.MyKafkaUtil;
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.common.restartstrategy.RestartStrategies;
 import org.apache.flink.api.common.time.Time;
@@ -29,7 +29,7 @@ public class Test {
         env.setRestartStrategy(RestartStrategies.noRestart());
 
         //修改用户名
-        System.setProperty("HADOOP_USER_NAME", "atguigu");
+        System.setProperty("HADOOP_USER_NAME", "bigdata");
 
         //2.读取Kafka ods_base_log 主题数据
         FlinkKafkaConsumer<String> kafkaSource = MyKafkaUtil.getKafkaSource("test", "test1");
